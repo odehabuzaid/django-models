@@ -119,3 +119,5 @@ GitHub.sublime-settings
 *.pyc
 __pycache__/
 poetry.lock
+
+.vscode
