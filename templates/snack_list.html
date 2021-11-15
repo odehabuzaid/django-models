@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Snacks List</h1>
+  {% if snacks_list %}
+  <ul>
+    {% for snack in snacks_list %}
+      <li>
+      <tr>
+      <td> {{snack.name}}</td> 
+      <td>{{snack.purchaser}}</td>
+      </tr>
+       
+      </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>There are no snacks added yet.</p>
+  {% endif %}
+{% endblock %}

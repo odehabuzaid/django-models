@@ -1,5 +1,10 @@
-from django.http import HttpResponse
+from django.views.generic import ListView
+
+from .models import Snack
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+class SnackListView(ListView):
+    model = Snack
+    template_name = "snack_list.html"
+    context_object_name = 'snacks_list'
+
