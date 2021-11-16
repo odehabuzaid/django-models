@@ -1,1 +1,1 @@
-[PR](https://github.com/odehabuzaid/snack-tracker/pulls/1)
+[PR](https://github.com/odehabuzaid/django-models/pull/1)
